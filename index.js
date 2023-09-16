@@ -41,3 +41,46 @@ console.log(isPalindrome('mam'))
 // const userName = 'ajith kumar'
 // const rev = userName.split('').reverse().join('')
 // console.log(rev)
+
+// for(let i = 0; i<=10;i++){
+//     console.log(i)
+// }
+
+const num = [1,3,42,4,5,6,88,77,22,34,55,78,2]
+const evenNumber = num.filter((even)=> even % 2 == 0)
+console.log(evenNumber)
+
+//even numbers
+for(let i =0;i<=10;i+=2){
+  console.log(i)
+}
+
+function array(a){ 
+ return a.length;
+}
+console.log(array([1,2,3,4,5]))
+
+function object(obj){
+    if('country' in obj){
+        return obj.country
+    }else{
+        return 'country not found'
+    }
+}
+console.log(object({ continent: 'Asia', country: 'Japan' }))
+
+const userDetails ={
+    userName:'bob',
+    age:'23',
+    country:'england'
+}
+
+function finddetails(){
+    if('userName' in userDetails){
+        return userDetails.userName
+    }else{
+        return 'user not found'
+    }
+}
+
+console.log(finddetails())
