@@ -84,3 +84,32 @@ function finddetails(){
 }
 
 console.log(finddetails())
+
+const test = [1,2,3,4,5]
+console.log(test.slice(0,-2))
+
+function myArray(a){
+       return a.slice(0,3)
+}
+console.log(myArray([1,2,3,4,5,6,7,8,9,10]))
+
+const addNumbers = [1,2,3,4,5,6,7,8,9,10]
+let totalSum = 0
+
+for(let i =0; i<addNumbers.length;i++){
+    totalSum +=addNumbers[i]
+}
+console.log(totalSum)
+
+let n =4
+let star = ""
+
+for(let i =0;i<n;i++){
+    console.log(i,'firstloop')
+    for(let l = 0;l<n;l++){
+        console.log(l,'secondloop')
+        star += "*"
+    }
+    star += "\n"
+}
+console.log(star)
