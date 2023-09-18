@@ -113,3 +113,71 @@ for(let i =0;i<n;i++){
     star += "\n"
 }
 console.log(star)
+
+// function findDuplicates(str){
+//     let result = []
+//     for(let i =0;i<str.length;i++){
+//         if(str[i]===str[i]){
+//             result.push(str[i])
+//         }
+//     }
+//     return result
+// }
+// console.log(findDuplicates('ssgresuyuias'))
+
+
+function fetchData(dataproccess){
+    console.log('data fetched from the server')
+    dataproccess(displayTheData)
+}
+
+function dataProccess(displayData){
+    console.log('the data is proccessing')
+    displayData()
+}
+
+function displayTheData(){
+    console.log('the data is displayed')
+}
+
+
+fetchData(dataProccess)
+
+ const maxValue = [1,2,3,4,5]
+// console.log(Math.max(...maxValue))
+// console.log(Math.min(...maxValue))
+
+function findMinMax(arr){
+       let max = arr[0]
+       let min = arr[0]
+       for(const num of arr){
+        // console.log(num)
+        if(num > max){
+            // console.log(max)
+            max = num
+        }
+        if(num<min){
+            min = num
+        }
+       }
+       console.log(max)
+       console.log(min)
+}
+findMinMax(maxValue)
+
+function sumOfTwoNumbers(a,b){
+        return a+b
+}
+
+console.log(sumOfTwoNumbers(3,5))
+
+// function revString(str){
+//      for(let i=str.length-1;i>=0;i--){
+//           console.log(str[i])
+//      }
+// }
+// revString('siva')
+
+const numbers =[1,22,3,4,5,6,7,8,86,5,4,4,6,6]
+const testResult =numbers.filter((even)=>even % 2 ==0)
+console.log(testResult)
