@@ -1,3 +1,4 @@
+// Netscape developed JavaScript and was created by Brenden Eich in the year of 1995
 // for (Initialization; Condition; Iteration) {
 //     // Code to be executed in each iteration
 //   }
@@ -97,6 +98,7 @@ const addNumbers = [1,2,3,4,5,6,7,8,9,10]
 let totalSum = 0
 
 for(let i =0; i<addNumbers.length;i++){
+    // console.log(i)
     totalSum +=addNumbers[i]
 }
 console.log(totalSum)
@@ -105,9 +107,9 @@ let n =4
 let star = ""
 
 for(let i =0;i<n;i++){
-    console.log(i,'firstloop')
+    // console.log(i,'firstloop')
     for(let l = 0;l<n;l++){
-        console.log(l,'secondloop')
+        // console.log(l,'secondloop')
         star += "*"
     }
     star += "\n"
@@ -181,3 +183,44 @@ console.log(sumOfTwoNumbers(3,5))
 const numbers =[1,22,3,4,5,6,7,8,86,5,4,4,6,6]
 const testResult =numbers.filter((even)=>even % 2 ==0)
 console.log(testResult)
+
+
+//upperCase
+function stringUpperCase(str){
+   return str.toUpperCase()
+}
+console.log(stringUpperCase('siva'))
+
+//anagram
+function isAnagram(str1,str2){
+//  if(str1.length !==str2.length){
+//     return false
+//  }
+ str1 = str1.split('').sort().join('')
+ str2 = str2.split('').sort().join('')
+
+ if(str1 === str2){
+    return true
+ }else{
+    return false
+ }
+}
+
+console.log(isAnagram('listen','silent'))
+console.log(isAnagram('modi','monu'))
+console.log(isAnagram('abcd','bcda'))
+
+//removeduplicatesfromarray
+ function removeDuplicates(arr){
+         const newArray = new Set(arr)
+         const resultArray = [...newArray]
+         return resultArray
+        
+ }
+
+ console.log(removeDuplicates([1,1,2,2,3,4,5,6,7,7,8,8]))
+
+ function removeFalsy(arr){
+    return arr.filter((value)=> Boolean(value))
+ }
+ console.log(removeFalsy([false, null, 0, '', undefined,NaN,1,2,3]))
