@@ -224,3 +224,17 @@ console.log(isAnagram('abcd','bcda'))
     return arr.filter((value)=> Boolean(value))
  }
  console.log(removeFalsy([false, null, 0, '', undefined,NaN,1,2,3]))
+
+//  function foo() {
+//     let x = y = 0;
+//     x++;
+//     y++;
+//     return x;
+// }
+
+// console.log(foo(), typeof x, typeof y);
+
+function foo() {
+    return {message:'Hello World'}
+}
+console.log(foo()); 
