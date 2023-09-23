@@ -116,18 +116,6 @@ for(let i =0;i<n;i++){
 }
 console.log(star)
 
-// function findDuplicates(str){
-//     let result = []
-//     for(let i =0;i<str.length;i++){
-//         if(str[i]===str[i]){
-//             result.push(str[i])
-//         }
-//     }
-//     return result
-// }
-// console.log(findDuplicates('ssgresuyuias'))
-
-
 function fetchData(dataproccess){
     console.log('data fetched from the server')
     dataproccess(displayTheData)
