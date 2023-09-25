@@ -228,4 +228,35 @@ function foo() {
 console.log(foo()); 
 
 
+ function arrNumbers(arr){
+    return arr[0]
+}
+console.log(arrNumbers([1,2,3,4,5,6]))
 
+function string(joinStr){
+    return 'something '+ joinStr
+}
+console.log(string('something'))
+
+function checkEquality(num){
+  if(num<=0){
+    return true
+  }else{
+    return false
+  }
+}
+
+console.log(checkEquality(0))
+
+function checkLessthan(a,b){
+    if(a+b<=100){
+        return true
+    }else{
+        return false
+    }
+}
+
+console.log(checkLessthan(10,20))
+
+const arrStr = ['string','number','javascript']
+console.log(arrStr.toString())
