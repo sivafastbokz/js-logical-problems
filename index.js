@@ -259,4 +259,10 @@ function checkLessthan(a,b){
 console.log(checkLessthan(10,20))
 
 const arrStr = ['string','number','javascript']
-console.log(arrStr.toString())
+// console.log(arrStr.toString())
+let longestStr =''
+arrStr.forEach((item)=>{
+  if(item.length>longestStr.length)
+  longestStr = item
+})
+console.log(longestStr)
