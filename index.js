@@ -268,4 +268,20 @@ arrStr.forEach((item)=>{
 console.log(longestStr)
 
 
+const evenAndOddNumbers = [1,2,3,4,5,6,7,8,9,10]
+
+const evenNumbers = (numbers)=>{
+    return  numbers % 2 == 0
+}
+
+const oddNumbers = (numbers) =>{
+  return numbers % 2 
+}
+
+const calculation = (arr,logic)=>{
+   const answer = arr.filter(logic)
+   return answer
+}
+console.log(calculation(evenAndOddNumbers,evenNumbers))
+console.log(calculation(evenAndOddNumbers,oddNumbers))
 

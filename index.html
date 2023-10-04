@@ -8,8 +8,17 @@
 </head>
 <body>
     <p id='demo'></p>
+    <button id='counter'> click Me</button>
+    <p id='countdisplay'></p>
     <script>
         document.getElementById('demo').innerHTML = 'hello world'
+        let counterBtn = 0
+        document.getElementById('counter').addEventListener('click',()=>{
+         counterBtn++
+        //  console.log(counterBtn)
+        document.getElementById('countdisplay').textContent = counterBtn
+        })
+        
     </script>
 </body>
 </html>
