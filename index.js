@@ -285,3 +285,17 @@ const calculation = (arr,logic)=>{
 console.log(calculation(evenAndOddNumbers,evenNumbers))
 console.log(calculation(evenAndOddNumbers,oddNumbers))
 
+const duplicateNumbers = [1,1,2,2,3,4,5,6,6,5,4,3]
+
+function removeDuplicateNumbers(arr){
+    const  finalArray = []
+    for(let i of arr){
+        // console.log(i)
+      if(!finalArray.includes(i)){
+               finalArray.push(i)
+      }
+    }
+    console.log(finalArray)
+}
+
+removeDuplicateNumbers(duplicateNumbers)
