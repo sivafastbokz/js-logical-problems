@@ -299,3 +299,9 @@ function removeDuplicateNumbers(arr){
 }
 
 removeDuplicateNumbers(duplicateNumbers)
+
+const transformData =JSON.stringify(userDetails) //JSON.stringify() takes a JavaScript object and transforms it into a JSON string.
+console.log(transformData)
+console.log(JSON.parse(transformData)) //JSON.parse() takes a JSON string and transforms it into a JavaScript object.
+
+console.log('this is a string.'instanceof string)
