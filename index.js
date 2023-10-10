@@ -286,7 +286,7 @@ console.log(calculation(evenAndOddNumbers,evenNumbers))
 console.log(calculation(evenAndOddNumbers,oddNumbers))
 
 const duplicateNumbers = [1,1,2,2,3,4,5,6,6,5,4,3]
-
+const duplicateCount ={}
 function removeDuplicateNumbers(arr){
     const  finalArray = []
     for(let i of arr){
@@ -297,6 +297,13 @@ function removeDuplicateNumbers(arr){
     }
     console.log(finalArray)
 }
+
+for(const element of duplicateNumbers){
+    duplicateCount[element]=(duplicateCount[element]|| 0)+1
+}
+console.log(dupilcateCount)
+
+
 
 removeDuplicateNumbers(duplicateNumbers)
 
