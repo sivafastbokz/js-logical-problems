@@ -311,7 +311,7 @@ const transformData =JSON.stringify(userDetails) //JSON.stringify() takes a Java
 console.log(transformData)
 console.log(JSON.parse(transformData)) //JSON.parse() takes a JSON string and transforms it into a JavaScript object.
 
-console.log('this is a string.'instanceof string)
+// console.log('this is a string.'instanceof string)
 
 for(let i =0;i<=10;i+=2){
     console.log(i)
