@@ -301,7 +301,7 @@ function removeDuplicateNumbers(arr){
 for(const element of duplicateNumbers){
     duplicateCount[element]=(duplicateCount[element]|| 0)+1
 }
-console.log(dupilcateCount)
+// console.log(dupilcateCount)
 
 
 
